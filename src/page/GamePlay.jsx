@@ -127,7 +127,7 @@ function GamePlay() {
             </div>
             <div style={{display:"flex",gap:"5px"}}>
               <button onClick={handleStartGame}>Restart</button>
-              {(time>0 && !win && !error) && <button onClick={()=>setAuto(!auto)}>Auto Play {auto?"ON":"OFF"}</button>}
+              {(time>0 && !win && !error) && <button onClick={()=>setAuto(!auto)}>Auto Play {auto?"OFF":"ON"}</button>}
             </div>
           </div>
           <div ref={gamePlayRef} className="game-play">
